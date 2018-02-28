@@ -1,0 +1,146 @@
+.demo {
+    margin-top: 100px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.demo_1{
+    padding: 10px;
+}
+
+
+.main {
+    border-radius: 10px;
+    border: solid 1px #eaeaea;
+}
+
+.main .img {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left;
+}
+
+.main .description .des {
+    padding: 10px;
+    margin-left: 285px;
+}
+
+
+.main .description .price {
+    padding: 10px;
+    margin-left: 285px;
+}
+
+.main .description .price img {}
+
+.main .description .price h2 {
+    color: #2678ba;
+}
+
+
+
+.comment {
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+    
+    
+}
+
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 10px;
+;
+
+}
+
+.fakeimg {
+    width: 100%;
+    padding: 10px;
+    
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.text {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.img-1 {
+    float: left;
+}
+
+.text_1 {
+    color: #e3484b;
+}
+
+.footer{
+    background-color: #222;
+    color: white;
+    border-color: #080808;
+    clear: both;
+}
+.container{
+    padding-top: 15px;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .demo {
+        margin-top: 150px;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+
+   .main .description .des {
+    padding: 10px;
+    margin-left: 210px;
+}
+
+
+.main .description .price {
+    padding: 10px;
+    margin-left: 210px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+    .rightcolumn{
+        display: none;
+    }
+    .leftcolumn{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .undercolumn{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 574px) {
+    .footer{
+        margin-top: 250px;
+    }
+}
