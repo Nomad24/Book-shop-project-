@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="sign_up.css">
+    <script src="sign_up.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header ">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html">Book Shop</a>
+                </div>
+
+                <form class="navbar-form navbar-left">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="sign_up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="login_in.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="ads_right">
+        <a href="#">
+        <img src="img/Pipeline-Module-ad-200x500.jpg" alt="ads">
+    </a>
+
+    </div>
+
+    <div class="main">
+        <div class="row demo_1">
+            <div class="col-md-6 col-sm-12 col-lg-6 col-md-offset-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Enter Your Details Here
+                    </div>
+                    <div class="panel-body">
+                        <form name="myform">
+                            <div class="form-group">
+                                <label for="myName">First Name *</label>
+                                <input id="myName" name="myName" class="form-control" type="text" data-validation="required">
+                                <span id="error_name" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Last Name *</label>
+                                <input id="lastname" name="lastname" class="form-control" type="text" data-validation="email">
+                                <span id="error_lastname" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Age *</label>
+                                <input id="age" name="age" class="form-control" type="number" min="1">
+                                <span id="error_age" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="dob">Date Of Birth *</label>
+                                <input type="date" name="dob" id="dob" class="form-control">
+                                <span id="error_dob" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select name="gender" id="gender" class="form-control">
+							<option selected>Male</option>
+							<option>Female</option>
+							<option>Other</option>
+						</select>
+                                <span id="error_gender" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="text" id="phone" name="phone" class="form-control">
+                                <span id="error_phone" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="disc">Discription</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+
+                            <button id="submit" type="submit" value="submit" class="btn btn-primary center">Submit</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer demo">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li>GitHub
+                            <li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact & support</a></li>
+                                <li><a href="#">Enterprise</a></li>
+                                <li><a href="#">Site status</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li>Applications
+                            <li>
+                                <li><a href="#">Product for Mac</a></li>
+                                <li><a href="#">Product for Windows</a></li>
+                                <li><a href="#">Product for Eclipse</a></li>
+                                <li><a href="#">Product mobile apps</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li>Services
+                            <li>
+                                <li><a href="#">Web analytics</a></li>
+                                <li><a href="#">Presentations</a></li>
+                                <li><a href="#">Code snippets</a></li>
+                                <li><a href="#">Job board</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li>Documentation
+                            <li>
+                                <li><a href="#">Product Help</a></li>
+                                <li><a href="#">Developer API</a></li>
+                                <li><a href="#">Product Markdown</a></li>
+                                <li><a href="#">Product Pages</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-xs-8">
+                    <ul class="list-unstyled list-inline pull-left">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    <p class="text-muted pull-right">© 2015 Company Name. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

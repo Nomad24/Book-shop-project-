@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Book shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header ">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html">Book Shop</a>
+                </div>
+
+                <form class="navbar-form navbar-left">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="sign_up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="login_in.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container demo">
+        <div class="jumbotron">
+            <h1>Welcome to our Book Shop</h1>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <!-- Slideshow -->
+        <div class="carousel slide slide_no" id="carousel">
+
+            <!-- Indicators -->
+
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#carousel" data-slide="0"></li>
+                <li data-target="#carousel" data-slide="1"></li>
+                <li data-target="#carousel" data-slide="2"></li>
+            </ol>
+
+            <!-- Slideshow -->
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/Hey-HoLets-Go-18-1300x500.png" alt="">
+                    <div class="carousel-caption">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <img src="img/FearofFranchise.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <img src="img/boeing_747_3-1300x600.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Pointers -->
+
+                <a href="#carousel" class="left carousel-control" data-slide="prev">
+                     <span class="glyphicon glyphicon-chevron-left"></span>
+                 </a>
+                <a href="#carousel" class="right carousel-control" data-slide="next">
+                     <span class="glyphicon glyphicon-chevron-right"></span>
+                 </a>
+
+
+            </div>
+
+        </div>
+        <div class="tab">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-4 demo_1">
+                        <div class="panel-group">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><strong>Categories</strong></div>
+                            </div>
+                            <ul class="list-group">
+                                <a href="#" class="list-group-item">Fantasy</a>
+                                <a href="#" class="list-group-item">Romance</a>
+                                <a href="#" class="list-group-item">Crime</a>
+                                <a href="#" class="list-group-item">Horror</a>
+                                <a href="#" class="list-group-item">Mystery</a>
+                                <a href="#" class="list-group-item">Literature</a>
+                                <a href="#" class="list-group-item">Poetry</a>
+                                <a href="#" class="list-group-item">Comic</a>
+                                <a href="#" class="list-group-item">Psychology</a>
+                                <a href="#" class="list-group-item">Medical</a>
+                                <a href="#" class="list-group-item">Art</a>
+                                <a href="#" class="list-group-item">Photography</a>
+                                <a href="#" class="list-group-item">Law</a>
+                                <a href="#" class="list-group-item">History</a>
+                                <a href="#" class="list-group-item">Business</a>
+                                <a href="#" class="list-group-item">Computer</a>
+                                <a href="#" class="list-group-item">Travel</a>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 col-xs-8 demo_2">
+                        <!-- Навигационные вкладки -->
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Best Sellers</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">New Arrivals</a></li>
+                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Used Books</a></li>
+                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Special Offers</a></li>
+                        </ul>
+
+                        <!-- Вкладки панелей -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                <div class="card clearfix">
+                                    <div class="gallery">
+                                        <a href="product.html">
+                                    <img src="img/Layer%20106.png" alt="Trolltunga Norway">
+                                    </a>
+                                        <div class="desc">The Hare With Amber Eyes</div>
+                                        <div class="des">
+                                            <h2>$60</h2>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="gallery">
+                                        <a href="product.html">
+                                    <img src="img/Layer%20107.png" alt="Trolltunga Norway">
+                                    </a>
+                                        <div class="desc">The Hare With Amber Eyes</div>
+                                        <div class="des">
+                                            <h2>$120</h2>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="gallery">
+                                        <a href="product.html">
+                                    <img src="img/Layer%20108.png" alt="Trolltunga Norway">
+                                    </a>
+                                        <div class="desc">The Hare With Amber Eyes</div>
+                                        <div class="des">
+                                            <h2>$80</h2>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="gallery">
+                                        <a href="product.html">
+                                    <img src="img/Layer%20109.png" alt="Trolltunga Norway">
+                                    </a>
+                                        <div class="desc">The Hare With Amber Eyes</div>
+                                        <div class="des">
+                                            <h2>$50</h2>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="gallery">
+                                        <a href="product.html">
+                                    <img src="img/Layer%20133.png" alt="Trolltunga Norway">
+                                    </a>
+                                        <div class="desc">The Hare With Amber Eyes</div>
+                                        <div class="des">
+                                            <h2>$180</h2>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="card clearfix">
+                                    <div class="gallery">
+                                        <a href="product.html">
+                                    <img src="img/Layer%20134.png" alt="Trolltunga Norway">
+                                    </a>
+                                        <div class="desc">The Hare With Amber Eyes</div>
+                                        <div class="des">
+                                            <h2>$30</h2>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="gallery">
+                                        <a href="product.html">
+                                    <img src="img/Layer%20135.png" alt="Trolltunga Norway">
+                                    </a>
+                                        <div class="desc">The Hare With Amber Eyes</div>
+                                        <div class="des">
+                                            <h2>$85</h2>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="gallery">
+                                        <a href="product.html">
+                                    <img src="img/Layer%2058.png" alt="Trolltunga Norway">
+                                    </a>
+                                        <div class="desc">The Hare With Amber Eyes</div>
+                                        <div class="des">
+                                            <h2>$99</h2>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="gallery">
+                                        <a href="product.html">
+                                    <img src="img/Layer%20137.png" alt="Trolltunga Norway">
+                                    </a>
+                                        <div class="desc">The Hare With Amber Eyes</div>
+                                        <div class="des">
+                                            <h2>$75</h2>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="gallery">
+                                        <a href="product.html">
+                                    <img src="img/Layer%2056.png" alt="Trolltunga Norway">
+                                    </a>
+                                        <div class="desc">The Hare With Amber Eyes</div>
+                                        <div class="des">
+                                            <h2>$65</h2>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="profile">...</div>
+                            <div role="tabpanel" class="tab-pane fade" id="messages">...</div>
+                            <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li>GitHub
+                            <li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact & support</a></li>
+                                <li><a href="#">Enterprise</a></li>
+                                <li><a href="#">Site status</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li>Applications
+                            <li>
+                                <li><a href="#">Product for Mac</a></li>
+                                <li><a href="#">Product for Windows</a></li>
+                                <li><a href="#">Product for Eclipse</a></li>
+                                <li><a href="#">Product mobile apps</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li>Services
+                            <li>
+                                <li><a href="#">Web analytics</a></li>
+                                <li><a href="#">Presentations</a></li>
+                                <li><a href="#">Code snippets</a></li>
+                                <li><a href="#">Job board</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li>Documentation
+                            <li>
+                                <li><a href="#">Product Help</a></li>
+                                <li><a href="#">Developer API</a></li>
+                                <li><a href="#">Product Markdown</a></li>
+                                <li><a href="#">Product Pages</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-xs-8">
+                    <ul class="list-unstyled list-inline pull-left">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    <p class="text-muted pull-right">© 2015 Company Name. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

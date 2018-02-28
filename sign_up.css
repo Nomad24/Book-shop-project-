@@ -1,0 +1,61 @@
+.palel-primary
+	{
+		border-color: #bce8f1;
+	}
+	.panel-primary>.panel-heading
+	{
+		background:#bce8f1;
+		
+	}
+	.panel-primary>.panel-body
+	{
+		background-color: #EDEDED;
+	}
+
+.main{
+    padding-top: 100px;
+}
+
+.demo{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer{
+    background-color: #222;
+    color: white;
+    border-color: #080808;
+}
+
+.ads_right{
+    width: 200px;
+    height: 500px;
+    float: right;
+    background-color: red;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+@media only screen and (max-width : 1032px) {
+
+    .ads_right{
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+    .demo_1{
+        margin-top: 50px;
+        
+    }
+}
+@media only screen and (max-width : 992px) {
+
+
+}
