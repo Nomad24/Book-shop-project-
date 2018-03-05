@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .footer {
+            background-color: #222;
+            color: white;
+            border-color: #080808;
+        }
+
+        .container {
+            padding-top: 15px;
+        }
+
+        .responsive {
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .responsive {
+                margin-top: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header ">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="../index.html">Book Shop</a>
+                </div>
+
+                <form class="navbar-form navbar-left">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="../index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="user_profile.html"><span class="glyphicon glyphicon-user"></span> My account</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-heart"></span> Favorite</a></li>
+                                <li><a href="edit_profile.html"><span class="glyphicon glyphicon-wrench"></span> Edit profile</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> My purchases</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> About us</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-off"></span> Log out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="responsive">
+        <div class="container">
+            <div class="row">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>User Profile</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-4 col-xs-12 col-sm-6 ">
+                            <img alt="User Pic" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" id="profile-image1" class="img-circle img-responsive">
+
+
+                        </div>
+                        <div class="col-md-8 col-xs-12 col-sm-6 ">
+                            <div class="container">
+                                <h2>John Doe</h2>
+                                <p>an <b> Employee</b></p>
+
+
+                            </div>
+                            <hr>
+                            <ul class="container details">
+                                <li>
+                                    <p><span class="glyphicon glyphicon-user one" style="width:50px;"></span>i.rudberg</p>
+                                </li>
+                                <li>
+                                    <p><span class="glyphicon glyphicon-envelope one" style="width:50px;"></span>somerandom@email.com</p>
+                                </li>
+                            </ul>
+                            <hr>
+                            <div class="col-sm-5 col-xs-6 tital ">Date Of Joining: 15 Jun 2016</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li>GitHub
+                            <li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact & support</a></li>
+                                <li><a href="#">Enterprise</a></li>
+                                <li><a href="#">Site status</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li>Applications
+                            <li>
+                                <li><a href="#">Product for Mac</a></li>
+                                <li><a href="#">Product for Windows</a></li>
+                                <li><a href="#">Product for Eclipse</a></li>
+                                <li><a href="#">Product mobile apps</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li>Services
+                            <li>
+                                <li><a href="#">Web analytics</a></li>
+                                <li><a href="#">Presentations</a></li>
+                                <li><a href="#">Code snippets</a></li>
+                                <li><a href="#">Job board</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li>Documentation
+                            <li>
+                                <li><a href="#">Product Help</a></li>
+                                <li><a href="#">Developer API</a></li>
+                                <li><a href="#">Product Markdown</a></li>
+                                <li><a href="#">Product Pages</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-xs-8">
+                    <ul class="list-unstyled list-inline pull-left">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    <p class="text-muted pull-right">© 2015 Company Name. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
